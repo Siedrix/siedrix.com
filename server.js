@@ -8,7 +8,7 @@ server.use(logger(':status :req[x-real-ip] :method :response-time ms :url'));
 
 var blog = new Paperpress({
 	directory : 'static',
-	themePath : 'static/layouts',
+	themePath : 'static/themes/base',
 	basePath  : '/blog',
 	articlesPerPage : 20,
 	pagesPath : ''
