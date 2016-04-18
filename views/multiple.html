@@ -1,0 +1,13 @@
+{% extends './layout.html' %}
+
+{% block content %}
+	{% for article in articles %}
+	<a href="/blog/{{ article.path }}">
+		<div class="post">
+			<h4>{{ article.title }}</h4>
+			<div class="description">{{ article.description }}</div>
+			<div class="read-more">Leer</div>
+		</div>
+	</a>
+	{% endfor %}
+{% endblock %}

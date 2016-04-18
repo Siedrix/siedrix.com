@@ -1,0 +1,71 @@
+{% extends './layout.html' %}
+{% block title %}{{ article.title }} | Siedrix.com{% endblock %}
+
+{% block head %}
+{% if article.image %}
+<style type="text/css">
+header{
+	background-image: url('{{ static }}/imgs/{{article.image}}');
+	{% if article.imagePositionY %}
+	background-position-y: {{article.imagePositionY}}
+	{% endif %}
+}
+</style>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+	<div class="post-single">
+		<h1>{{ article.title }}</h1>
+		<div>{% autoescape false %}
+			{{ article.content }}
+		{% endautoescape %}</div>
+	</div>
+{% endblock %}
+
+{% block footer %}
+	<div class="footer">
+		<div class="footer-wrapper">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
+					<div class="row">
+						<div class="col-xs-5">
+							<img class="avatar height-same-as-width" src="/imgs/reveillark.jpg">
+						</div>
+						<div class="col-xs-7">
+							<h4>Soy Siedrix</h4>
+							<p>Soy un full stack developer para en <a href="https://twitter.com/tutumcloud">@tutumcloud</a>, ex <a href="https://twitter.com/mejorandola">@mejorandola</a> y <a href="https://twitter.com/breeziapp">@breezi</a>.</p>
+							<p>Soy organizador del SHDH Mexico City y <a href="https://twitter.com/Chela_js">@Chela_js</a>.</p>
+							<p>Soy Hacker de corazón.</p>
+						</div>						
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-offset-1 col-sm-12" style="display:none;">
+					<h4>Otros articulos</h4>
+				</div>				
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript">
+var heightSameAsWidth = function () {
+	$('.height-same-as-width').each(function () {
+		var $this = $(this);
+
+		$this.height( $this.width() );
+	});
+}
+$(document).ready(function () {
+	$('.content a').each(function(i,item){
+		var $item = $(item);
+		$item.attr('target', '_blank');
+	});
+
+	heightSameAsWidth();
+});
+
+$(window).on('resize', heightSameAsWidth);
+</script>
+{% endblock %}
