@@ -68,7 +68,7 @@ header {
 	height: 600px
 }
 
-.post-single h1, .post h4, .page h1, .page h2, .page h3, .page h4, .page h5, .page h6{
+.http-error h1, .post-single h1, .post h4, .page h1, .page h2, .page h3, .page h4, .page h5, .page h6{
 	font-family: 'Actor', sans-serif;
 	text-transform: uppercase;
 }
@@ -116,6 +116,10 @@ header {
 pre{
 	background: none;
 	border: none;
+}
+
+.http-error{
+	text-align: center
 }
 
 .footer{
