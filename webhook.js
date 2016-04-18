@@ -6,7 +6,7 @@ module.exports = function(paperpress){
 			exec('git pull --rebase origin master', function (error) {
 				if (error ) { return res.send(500, error); }
 
-				paperpress.readArticles();
+				paperpress.load();
 				res.send({sucess:true});
 			});
 		}else{
