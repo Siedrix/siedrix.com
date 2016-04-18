@@ -43,16 +43,16 @@ server.get('/blog', function (req, res) {
 server.get('/info', function(req, res) {
 	var article = _.findWhere(blog.items,{type:'pages', slug:'info'})
 
-	res.render('single',{
-		article: article
+	res.render('page',{
+		page: article
 	})
 })
 
 server.get('/blog/:article', function (req, res) {
 	var articles = blog.getCollection('articles')
-	var article = _.findWhere(articles,{type:'articles', slug:req.params.article})
+	var article = _.findWhere(articles,{type:'articles', path:req.params.article})
 
-	res.render('page',{
+	res.render('single',{
 		article: article
 	})
 })
