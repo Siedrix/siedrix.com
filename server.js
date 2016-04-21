@@ -17,10 +17,19 @@ server.set('view cache', false);
 swig.setDefaults({ cache: false });
 
 var blog = new Paperpress({
-	uriPrefix: '/blog'
+	uriPrefix: '/blog',
+	pathBuilder: function(item, collectionName){
+		if(collectionName === 'articles'){
+			return '/blog/'+item.slug
+		}else if(collectionName === 'bubbles'){
+			return '/reflexiones-diarias/'+item.slug
+		}else if(collectionName === 'pages'){
+			return '/'+item.slug
+		}
+	}
 });
 blog.addHook(function(item){
-	item.path = item.path.toLowerCase()
+	item.slug = item.slug.toLowerCase()
 })
 blog.load()
 
@@ -104,9 +113,9 @@ server.get('/feed', function (req, res) {
 
 server.get('/rss', function (req, res) {
 	// res.send('hi')
-	var articles = blog.getCollection('articles')
+	var articles = blog.getCollections(['articles', 'bubbles'])
 	articles.forEach((item)=>{
-		item.suggestedUri = '/blog/' + item.slug
+		item.link = item.suggestedPath
 	})
 
 	var feed = Paperpress.helpers.createFeed(feedDescription, articles)
