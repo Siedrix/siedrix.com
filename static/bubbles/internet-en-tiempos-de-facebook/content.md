@@ -1,0 +1,11 @@
+En India hace un par de meses [activistas a favor de un internet abierto impidieron que Facebook ofreciera internet gratuito a todos los ciudadanos](http://www.thedailybeast.com/articles/2016/02/09/india-rejects-facebook-s-free-internet.html) de ese país con smartphones por medio de algo que es conocido como *zero-rated service* y esta medida de inicio parece contraintuitiva, pero después de leer un poco al respecto me parece una buena decisión a favor de tener un internet más abierto parece la correcta.
+
+Hay que tomar en cuenta es que Facebook es un *walled garden* y lo ha sido desde hace mucho tiempo, pero cada día tiene mas poder y esto empieza a crear problemas nuevos. El ser un *walled garden* significa que Facebook busca mantener a sus usuarios el mayor tiempo posible en el su sitio sin mandarlo a otros lugares de internet por la información, entonces solo vemos contenidos compartidos por nuestros amigos y pagados por ads por alguna empresa.
+
+Esto empieza a pasar en México en la parte de video, messenger y links precargados por Facebook los cuales puedes acceder siempre y cuando tengas un poco crédito en tu Telcel sin gastar tu crédito.
+
+La idea de los *zero-rated service* en conjunto con un *walled garden* con tanto poder como Facebook empieza a tener ramificaciones interesantes en cómo usamos internet, por que hoy es mucho más fácil compartir información con nuestros amigos y familiares pero a la vez es mucho más complicado entender que es internet más allá del *walled garden*. Empezamos a ver anuncios en los cuales solo hay una F y un término que buscar en Facebook de muchas empresas que no tienen sitios de internet.
+
+A su vez estamos perdiendo noción sobre los conceptos básicos sobre los que está construido internet como qué es http, que es un link, que es una url y que es un server. Por lo cual empezaremos a tener un gap mucho más grande para salir del *walled garden* y usar el poder de Internet que es nivelar el campo de juego entre las grandes empresas y los pequeños startups.
+
+Será interesante ver que pasa en los siguientes meses y años en México y cómo cambian los sitios que construimos y cómo usamos internet, porque las medidas que no pasaron en India, parece que están ya en funcionamiento con Telcel y Facebook.
