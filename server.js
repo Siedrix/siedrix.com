@@ -65,7 +65,7 @@ server.get('/blog/:article', function (req, res) {
 	}
 
 	var articles = blog.getCollection('articles')
-	var article = _.findWhere(articles,{path:req.params.article})
+	var article = _.findWhere(articles,{slug:req.params.article})
 
 	if(!article){
 		res.status(404)
