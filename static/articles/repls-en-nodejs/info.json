@@ -1,6 +1,5 @@
 {
 	"title" : "Repls en nodejs",
-	"path"  : "repls-en-nodejs",
 	"date" : "Sun Apr 13 2014 14:24:30 GMT-0500 (CDT)",
 	"description" : "Repls es una manera de crear consolas como las de RoR o django en node, estas se crean muy facil, checa como en este articulo"
 }
