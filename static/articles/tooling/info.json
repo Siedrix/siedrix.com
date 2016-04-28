@@ -1,6 +1,6 @@
 {
 	"title" : "Tooling y materia prima",
-	"path"  : "tooling",
+	"slug"  : "tooling",
 	"date" : "Sun Jun 01 2014 22:01:10 GMT-0500 (CDT)",
 	"image" : "2048-11.jpg",
 	"imagePositionY" : "-250px"	

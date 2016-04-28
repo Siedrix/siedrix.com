@@ -33,6 +33,10 @@ blog.addHook(function(item){
 })
 blog.load()
 
+blog.items.forEach(function(item){
+	console.log('=>', item.path)
+})
+
 server.use(express.static('public'))
 
 server.get('/', function (req, res) {
@@ -65,7 +69,7 @@ server.get('/blog/:article', function (req, res) {
 	}
 
 	var articles = blog.getCollection('articles')
-	var article = _.findWhere(articles,{slug:req.params.article})
+	var article = _.findWhere(articles,{path:req.path})
 
 	if(!article){
 		res.status(404)
@@ -95,7 +99,7 @@ server.get('/reflexiones-diarias/:slug', function (req, res) {
 	}
 
 	var bubbles = blog.getCollection('bubbles')
-	var buble = _.findWhere(bubbles,{path:req.params.slug})
+	var buble = _.findWhere(bubbles,{path:req.path})
 
 	if(!buble){
 		res.status(404)
