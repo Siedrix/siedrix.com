@@ -1,6 +1,6 @@
 {
 	"title" : "Mi experiencia con node.js",
-	"path"  : "mi-experiencia-con-node-js",
+	"slug" : "mi-experiencia-con-node-js",
 	"date" : "Thu Nov 11 2010 23:38:10 GMT-0600 (CST)",
 	"description" : "Hace un par de dias me pidieron que escribiera un poco de mi experiencia e interés para Maestros de la Web, el texto salio muy corto y tuvieron que cortarlo para que se integrara con el articulo que escribieron. Entonces aquí publico todo lo que escribo.",
 	"contentType" : "html"
