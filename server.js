@@ -1,5 +1,5 @@
 var express = require('express'),
-	Paperpress = require('paperpress').Paperpress,
+	Paperpress = require('paperpress'),
 	logger = require('morgan'),
 	swig = require('swig'),
 	_ = require('underscore')
@@ -32,6 +32,10 @@ blog.addHook(function(item){
 	item.slug = item.slug.toLowerCase()
 })
 blog.load()
+
+blog.items.forEach(function(item){
+	console.log('=>', item.type, item.path)
+})
 
 server.use(express.static('public'))
 

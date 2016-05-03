@@ -1,0 +1,7 @@
+Esto es uno de los temas interesantes que han pasado por las platicas de programación que he tenido el mes pasado. En algunos casos productivas, en algunos casos no, pero siempre es un punto central. El software no sucede por lenguajes, frameworks o librerías por arte de magia, crear buen software implica 2 cosas muy importantes tomar buenas decisiones y dedicarle muchas horas de trabajo.
+
+Tomar buenas decisiones al programar generalmente implica conocer las bases sobre las que estamos programando, entender que problema estamos resolviendo, cual es la opción más sencilla para resolver este problema y una buena dinámica de equipo para detectar las malas decisiones pronto. El elegir la librería, framework o el lenguaje correcto suele ser muy secundario, a fin de cuentas las mismas herramientas han dado muy buenos resultados para algunos equipo y muy malos resultados para otros.
+
+Sobre trabajar muchas horas en un proyecto las 2 cosas más importantes es que sea un problema relevante a resolver para el equipo y tener una dinámica del equipo que nos motive a hacerlo. He trabajado en lugares sumamente estresantes, pero mientras que este aprendiendo y resolviendo algo complicado e interesante todos los días, he seguido yendo a trabajar con gusto.
+
+Creo que es importante empezar a cambiar la platica de flamewars sobre las herramientas que usamos y empezar a trabajar en como aprendemos las bases, tomamos buenas decisiones y lugares de trabajo que generen buen software.
