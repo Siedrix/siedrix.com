@@ -2,7 +2,7 @@
 
 {% block content %}
 	{% for article in articles %}
-	<a href="{{ article.link }}">
+	<a href="{{ article.path }}">
 		<div class="post">
 			<h4>{{ article.title }}</h4>
 			<div class="description">{{ article.description }}</div>

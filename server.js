@@ -54,10 +54,6 @@ server.get('/info', function(req, res) {
 server.get('/blog', function (req, res) {
 	var articles = blog.getCollection('articles')
 
-	articles.forEach((item) => {
-		item.link = '/blog/' + item.slug
-	})
-
 	res.render('multiple',{
 		articles: articles
 	})
