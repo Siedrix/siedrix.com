@@ -8,7 +8,7 @@ var feedDescription = require('./feed-description')
 
 var server = express();
 
-server.use(logger(':status :req[x-real-ip] :method :response-time ms :url'));
+// server.use(logger(':status :req[x-real-ip] :method :response-time ms :url'));
 
 server.engine('html', swig.renderFile);
 server.set('view engine', 'html');
@@ -23,6 +23,8 @@ var blog = new Paperpress({
 			return '/blog/'+item.slug
 		}else if(collectionName === 'bubbles'){
 			return '/reflexiones-diarias/'+item.slug
+		}else if(collectionName === 'related-links'){
+			return '/related-links/'+item.slug
 		}else if(collectionName === 'pages'){
 			return '/'+item.slug
 		}
@@ -102,8 +104,13 @@ server.get('/reflexiones-diarias/:slug', function (req, res) {
 		return res.render('404')
 	}
 
+	var relatedLinks = blog.items.filter(function(item){
+		return item.type === 'related-links' && item.parent === buble.path
+	})
+
 	res.render('single',{
-		article: buble
+		article: buble,
+		relatedLinks: relatedLinks
 	})
 })
 

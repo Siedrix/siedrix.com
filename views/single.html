@@ -20,6 +20,34 @@ header{
 		<div>{% autoescape false %}
 			{{ article.content }}
 		{% endautoescape %}</div>
+
+		<div id="related-links">
+			<h4>Links relacionados</h4>
+			{% if relatedLinks.length %}
+			{% for relatedLink in relatedLinks %}
+				<div class="related-link">
+					<p class="related-header">
+						<a href="{{relatedLink.uri}}">
+							{{relatedLink.title}}
+						</a>
+					</p>
+					<p class="related-description">
+						{{relatedLink.description}}
+					</p>
+					<p class="related-sharer">
+						Compartido por 
+						<a href="{{relatedLink.sharer.profile}}" target="_blank">
+							{{relatedLink.sharer.name}}
+						</a>
+					</p>
+				</div>
+			{% endfor %}
+			<div>Manda links relacionados a <a href="http://twitter.com/home?status=Hey @siedrix este <link> deberia de estar en {{article.title}}" target="_blank">@Siedrix</a></div>
+			{% else %}
+			<div>No hay links relacionados. Manda el primero a <a href="http://twitter.com/home?status=Hey @siedrix este <link> deberia de estar en {{article.title}}" target="_blank">@Siedrix</a></div>
+			{% endif %}
+		</div>
+
 	</div>
 {% endblock %}
 

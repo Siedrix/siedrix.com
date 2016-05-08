@@ -113,6 +113,24 @@ header {
 	text-align: right;
 }
 
+#related-links{
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}
+#related-links h4{
+	text-transform: uppercase;
+	margin-bottom: 25px; 
+}
+
+#related-links .related-header{
+	font-weight:bold;
+	margin-bottom:5px;
+	text-transform: uppercase;
+}
+#related-links .related-description{
+	margin-bottom:5px;
+}
+
 pre{
 	background: none;
 	border: none;
