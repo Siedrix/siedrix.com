@@ -74,8 +74,13 @@ server.get('/blog/:article', function (req, res) {
 		return res.render('404')
 	}
 
+	var relatedLinks = blog.items.filter(function(item){
+		return item.type === 'related-links' && item.parent === article.path
+	})
+
 	res.render('single',{
-		article: article
+		article: article,
+		relatedLinks: relatedLinks
 	})
 })
 
