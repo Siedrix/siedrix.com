@@ -75,8 +75,13 @@ header {
 
 .post-single h1{
 	margin-top: 0px;
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 	text-align: center;
+}
+.post-single .post-date{
+	text-align: center;
+	margin-bottom: 50px;
+	color: #999;
 }
 
 .post h4{

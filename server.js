@@ -2,6 +2,7 @@ var express = require('express'),
 	Paperpress = require('paperpress'),
 	logger = require('morgan'),
 	swig = require('swig'),
+	utils = require('./lib/utils'),
 	_ = require('underscore')
 
 var feedDescription = require('./feed-description')
@@ -30,9 +31,12 @@ var blog = new Paperpress({
 		}
 	}
 });
+
 blog.addHook(function(item){
+	item.prettyDate = utils.prettyDate(item.date, item)
 	item.slug = item.slug.toLowerCase()
 })
+
 blog.load()
 
 blog.items.forEach(function(item){

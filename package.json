@@ -6,8 +6,9 @@
     "express": "4.13.4",
     "moment": "^2.13.0",
     "morgan": "1.7.0 ",
-    "paperpress": "1.0.2",
+    "paperpress": "1.0.3",
     "swig": "^1.4.2",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "underscore.string": "^3.3.4"
   }
 }
