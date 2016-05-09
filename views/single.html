@@ -7,10 +7,18 @@
 header{
 	background-image: url('{{ static }}/imgs/{{article.image}}');
 	{% if article.imagePositionY %}
-	background-position-y: {{article.imagePositionY}}
+	background-position-y: {{article.imagePositionY}};
+	{% endif %}
+	{% if article.imageSize %}
+	background-size: {{article.imageSize}};
 	{% endif %}
 }
 </style>
+{% endif %}
+{% if article.image %}
+<meta property="og:image" content="http://siedrix.com/imgs/{{article.image}}" />
+{% else %}
+<meta property="og:image" content="http://siedrix.com/imgs/8seTuSW.jpg" />
 {% endif %}
 {% endblock %}
 
