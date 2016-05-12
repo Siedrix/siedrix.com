@@ -31,29 +31,43 @@ header{
 		{% endautoescape %}</div>
 
 		<div id="related-links">
-			<h4>Links relacionados</h4>
+			<h4>Comentarios y links relacionados</h4>
 			{% if relatedLinks.length %}
 			{% for relatedLink in relatedLinks %}
+				{% if relatedLink.subtype == "link" %}
 				<div class="related-link">
-					<p class="related-header">
-						<a href="{{relatedLink.uri}}">
+					<p class="related-sharer">
+						<a href="{{relatedLink.sharer.profile}}" target="_blank">
+							{{relatedLink.sharer.name}}
+						</a>
+						compartió
+						<a class="related-header" href="{{relatedLink.uri}}">
 							{{relatedLink.title}}
 						</a>
 					</p>
 					<p class="related-description">
-						{{relatedLink.description}}
+						{% autoescape false %}{{relatedLink.content}}{% endautoescape %}
 					</p>
+				</div>
+				{% endif %}
+
+				{% if relatedLink.subtype == "note" %}
+				<div class="related-link">
 					<p class="related-sharer">
-						Compartido por 
 						<a href="{{relatedLink.sharer.profile}}" target="_blank">
 							{{relatedLink.sharer.name}}
 						</a>
+						comentó:
 					</p>
+					<div class="related-content">
+						{% autoescape false %}{{relatedLink.content}}{% endautoescape %}
+					</div>
 				</div>
+				{% endif %}
 			{% endfor %}
-			<div>Manda links relacionados a <a href="http://twitter.com/home?status=Hey @siedrix este <link> deberia de estar en {{article.title}}" target="_blank">@Siedrix</a></div>
+			<div>Manda comentarios y links relacionados a <a href="http://twitter.com/home?status=Hey @siedrix este <link> deberia de estar en {{article.title}}" target="_blank">@Siedrix</a></div>
 			{% else %}
-			<div>No hay links relacionados. Manda el primero a <a href="http://twitter.com/home?status=Hey @siedrix este <link> deberia de estar en {{article.title}}" target="_blank">@Siedrix</a></div>
+			<div>No hay links relacionados. Manda comentarios y links relacionados a <a href="http://twitter.com/home?status=Hey @siedrix este <link> deberia de estar en {{article.title}}" target="_blank">@Siedrix</a></div>
 			{% endif %}
 		</div>
 

@@ -24,8 +24,8 @@ var blog = new Paperpress({
 			return '/blog/'+item.slug
 		}else if(collectionName === 'bubbles'){
 			return '/reflexiones-diarias/'+item.slug
-		}else if(collectionName === 'related-links'){
-			return '/related-links/'+item.slug
+		}else if(collectionName === 'related-notes'){
+			return '/related-notes/'+item.slug
 		}else if(collectionName === 'pages'){
 			return '/'+item.slug
 		}
@@ -79,7 +79,7 @@ server.get('/blog/:article', function (req, res) {
 	}
 
 	var relatedLinks = blog.items.filter(function(item){
-		return item.type === 'related-links' && item.parent === article.path
+		return item.type === 'related-notes' && item.parent === article.path
 	})
 
 	res.render('single',{
@@ -114,7 +114,7 @@ server.get('/reflexiones-diarias/:slug', function (req, res) {
 	}
 
 	var relatedLinks = blog.items.filter(function(item){
-		return item.type === 'related-links' && item.parent === buble.path
+		return item.type === 'related-notes' && item.parent === buble.path
 	})
 
 	res.render('single',{

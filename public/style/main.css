@@ -127,13 +127,25 @@ header {
 	margin-bottom: 25px; 
 }
 
-#related-links .related-header{
-	font-weight:bold;
+#related-links .related-sharer{
 	margin-bottom:5px;
+	font-weight:bold;
+}
+
+#related-links .related-header{
 	text-transform: uppercase;
 }
+
+#related-links .related-content{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+#related-links .related-content p{
+	margin-bottom:8px;
+}
 #related-links .related-description{
-	margin-bottom:5px;
+    margin-bottom: 30px;
 }
 
 pre{
