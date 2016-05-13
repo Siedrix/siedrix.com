@@ -2,7 +2,7 @@
 title: Cache con Redis en Koa
 date: Fri May 13 2016 10:50:22 GMT-0500 (CDT)
 slug: cache-redis-koa
-description: 
+description: Aprende como agregar cache a un app de Koa. Es muy sencillo.
 image: nBqCMwYS.jpg
 imagePositionY: 0px
 imageSize: cover
