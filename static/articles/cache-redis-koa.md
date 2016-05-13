@@ -11,7 +11,7 @@ En la última semana he estado haciendo cosas que implican tener un server que p
 
 Para este punto, probablemente todos deberían saber lo mucho que me gusta Redis, es una navaja suiza y si Redis hace algo, probablemente lo hará mejor que tu implementación desde cero. Permite tener sesiones en Nodejs, [conectar múltiples servicios por medio de pubsub](/blog/conectando-servicios-a-node.js) y también permite agregar cache a tu aplicación bastante fácil.
 
-Había trabajado algo similar en par de apps de [Express](expressjs.com) y ahora que lo intente en [Koa](koajs.com) me di cuenta que sus middleware son mucho mas poderosos y tienen mucha mas flexibilidad. En un middleware de express en el momento que llamas `next()` se ejecuta el siguiente middleware y este middleware dejaba de ser parte del request. En el caso de Koa esto es distinto, tienes la libertad de ejecutar `next` esperar a que ejecuten todos las demás funciones que pertenecen a ese url handler y después todavía puedes ejecutar código. 
+Había trabajado algo similar en par de apps de [Express](http://expressjs.com) y ahora que lo intente en [Koa](http://koajs.com) me di cuenta que sus middleware son mucho mas poderosos y tienen mucha mas flexibilidad. En un middleware de express en el momento que llamas `next()` se ejecuta el siguiente middleware y este middleware dejaba de ser parte del request. En el caso de Koa esto es distinto, tienes la libertad de ejecutar `next` esperar a que ejecuten todos las demás funciones que pertenecen a ese url handler y después todavía puedes ejecutar código. 
 
 Por ejemplo este middleware checa cuanto tiempo toma en procesar un request:
 
