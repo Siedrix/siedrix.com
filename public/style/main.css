@@ -84,6 +84,16 @@ header {
 	color: #999;
 }
 
+.post-single ol li {
+    font-size: 3em;
+}
+
+.post-single ol li p {
+    font-size: .31em;
+    vertical-align: text-top;
+    display: inline-block;
+}
+
 .post h4{
 	color: #25629F;
 	font-size: 21px;
