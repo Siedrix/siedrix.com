@@ -142,12 +142,11 @@ server.get('/rss', function (req, res) {
 
 server.get('/sitemap.xml', function (req, res) {
 	// res.send('hi')
-	var articles = blog.getCollections(['articles', 'bubbles'])
-	articles.forEach((item)=>{
-		item.hostname = item.path
-	})
+	var urls = blog.getCollections(['articles', 'bubbles', 'pages'])
 
-	var sitemap = Paperpress.helpers.createSiteMap(feedDescription, articles)
+	urls.push({path:'/blog'})
+
+	var sitemap = Paperpress.helpers.createSiteMap(feedDescription, urls)
 
 	res.set('Content-Type', 'text/xml');
 	res.send(sitemap);
