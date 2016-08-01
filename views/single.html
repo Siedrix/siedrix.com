@@ -30,6 +30,10 @@ header{
 			{{ article.content }}
 		{% endautoescape %}</div>
 
+		{% if article.imageLink %}
+		<div class="image-link"><a href="{{ article.imageLink }}" target="_blank">Foto por {{ article.imageAuthor }}</a></div>
+		{% endif %}
+
 		<div id="related-links">
 			<h4>Comentarios y links relacionados</h4>
 			{% if relatedLinks.length %}

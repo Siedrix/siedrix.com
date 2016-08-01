@@ -9,7 +9,7 @@ var feedDescription = require('./feed-description')
 
 var server = express();
 
-// server.use(logger(':status :req[x-real-ip] :method :response-time ms :url'));
+server.use(logger(':status :req[x-real-ip] :method :response-time ms :url'));
 
 server.engine('html', swig.renderFile);
 server.set('view engine', 'html');
