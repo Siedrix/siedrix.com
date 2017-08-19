@@ -2,7 +2,7 @@
 title: El camino para ser un buen Developer
 date: 2017-08-19T16:34:58.208Z
 slug: el-camino-para-ser-un-buen-developer
-description: Hoy podemos aprender los conceptos importantes de cada industria leyendo la documentación del API de los grandes del mercado.
+description: Este blogpost responde la pregunta “¿Como aprendo a programar?” y el camino para convertirte en buen developer desde tus primeras lineas de código hasta la especialización que te permitirá resolver problemas complejos del mundo.
 image: dino-reichmuth-84359.jpg
 imagePositionY: -340px
 imageSize: cover
