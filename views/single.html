@@ -15,11 +15,26 @@ header{
 }
 </style>
 {% endif %}
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@siedrix" />
+<meta name="twitter:creator" content="@siedrix" />
+<meta property="og:url" content="http://siedrix.com{{ article.path }}" />
+<meta property="og:title" content="{{ article.title }}" />
+<meta property="og:description" content="{{ article.description }}" />
+
 {% if article.image %}
 <meta property="og:image" content="http://siedrix.com/imgs/{{article.image}}" />
+<meta name="twitter:image" content="http://siedrix.com/imgs/{{article.image}}">
 {% else %}
 <meta property="og:image" content="http://siedrix.com/imgs/8seTuSW.jpg" />
+<meta name="twitter:image" content="http://siedrix.com/imgs/8seTuSW.jpg">
 {% endif %}
+
+
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="{{ article.title }}">
+<meta name="twitter:image" content="{{ static }}/imgs/{{article.image}}">
 {% endblock %}
 
 {% block content %}
