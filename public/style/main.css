@@ -207,15 +207,18 @@ pre{
 	}
 	.post, .post-single{
 		font-size: 35px;
+		line-height: 140%;
 	}
 	.post p, .post-single p{
-		margin-bottom: 28px;
+		margin-bottom: 40px;
 	}
-	.post h4{
+	.post h4, .post-single h4{
 		font-size: 40px
 	}
 	.content h1{
 		font-size: 55px;
+    margin-top: 50px;
+    margin-bottom: 25px;		
 	}
 }
 
