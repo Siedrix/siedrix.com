@@ -22,7 +22,10 @@ header{
 <meta property="og:title" content="{{ article.title }}" />
 <meta property="og:description" content="{{ article.description }}" />
 
-{% if article.image %}
+{% if article.coverImage %}
+<meta property="og:image" content="http://siedrix.com/imgs/{{article.coverImage}}" />
+<meta name="twitter:image" content="http://siedrix.com/imgs/{{article.coverImage}}">
+{% elif article.image %}
 <meta property="og:image" content="http://siedrix.com/imgs/{{article.image}}" />
 <meta name="twitter:image" content="http://siedrix.com/imgs/{{article.image}}">
 {% else %}

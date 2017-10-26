@@ -8,6 +8,7 @@ imagePositionY: -180px
 imageSize: cover
 imageLink: https://unsplash.com/photos/1-ISIwuBMiw
 imageAuthor: Kimon Maritz
+coverImage: logo-commonsense-horizontal.png
 ---
 En los últimos meses una serie de eventos inesperados me llevaron a concretar una sociedad muy peculiar con Samara Salas, lo cual me tiene muy feliz. Hemos creado una empresa bastante interesante y vendrán muchos cambios en los próximos meses, eso hará que **Latteware Inc.** transmute. La empresa que medio muchas satisfacciones profesionales y personales la forme hace mas de un año y que opere como agencia de desarrollo de software. 
 
