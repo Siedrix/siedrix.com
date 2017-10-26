@@ -78,10 +78,16 @@ header {
 	margin-bottom: 10px;
 	text-align: center;
 }
+
 .post-single .post-date{
 	text-align: center;
 	margin-bottom: 50px;
 	color: #999;
+}
+.post-single img{
+	margin: 0 auto;
+	display: block;
+	max-width: 100%;
 }
 
 .post-single ol li {
@@ -92,6 +98,10 @@ header {
     font-size: .31em;
     vertical-align: text-top;
     display: inline-block;
+}
+
+.post-single a{
+	font-weight: bold;
 }
 
 .post h4{
