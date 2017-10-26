@@ -18,7 +18,7 @@ Al unirnos como socios, fusionamos los distintos proyectos y la visión que ten�
 
 Con foco en crear este tipo de proyectos estamos trabajando un repo con el que iniciamos proyectos llamado [Marble Seeds](https://github.com/latteware/marble-seed) el cual le estaremos poniendo mucho cariño y dedicación para hacerlo una base sólida para todo lo que construyamos y les sugiero darle una revisada.
 
-La comunidad que se creo alrededor de Latteware donde compartiamos contenidos en Facebook y dimos cursos de programación se transformará en Developers Common Sense. Donde nos enfocaremos en tener eventos de programación, compartir contenidos para crecer como programadores y, mas importante, dar cursos de programación relativos al stack y la manera de trabajar que tenemos en la empresa con la idea de compartir lo que vamos aprendiendo como equipo.
+La comunidad que se creo alrededor de Latteware donde compartimos contenidos en Facebook y dimos cursos de programación se transformará en Developers Common Sense. Donde nos enfocaremos en tener eventos de programación, compartir contenidos para crecer como programadores y, más importante, dar cursos de programación relativos al stack y la manera de trabajar que tenemos en la empresa con la idea de compartir lo que vamos aprendiendo.
 
 ![Logo developers common sense people](/imgs/logo-developers-commonsense-horizontal.png)
 
