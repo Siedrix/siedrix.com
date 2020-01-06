@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "express": "4.13.4",
+    "express": "^4.17.1",
     "moment": "^2.13.0",
-    "morgan": "1.7.0 ",
+    "morgan": "^1.9.1",
     "paperpress": "1.1.1",
     "swig": "^1.4.2",
     "underscore": "^1.8.3",
